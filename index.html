@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Title</h1>
+  <p id="description">This is a short explanation about the task.</p>
+  
+  <form id="form">
+    <div class="form-group">
+    <label for="first-name" >First Name:</label>
+    <input type="text" id="first-name" name="FirstName" placeholder="First Name" required> <br>
+
+    <label for="Last-name">Last Name:</label>
+    <input type="text" id="last-name" name="LastName" placeholder="Last Name" required><br>
+
+    <label for="Address">Address:</label>
+    <textarea id="address" name="Address" rows="1" placeholder="Address" required></textarea><br><br>
+
+    <label for="Pincode">Pincode:</label>
+    <input  type="text" id="pincode" name="pincode" required><br><br>
+
+    <label id="gender">Gender:
+      <input value="Male" type="radio" name="gender">Male
+      <input value="Female" type="radio" name="gender">Female
+      <input value="Other" type="radio" name="gender">Other
+   
+    </label><br><br>
+
+    <div id="Food">
+    <label ><u>Food:</u></label><br>
+    <input type="checkbox" name="Food" value="Briyani" >Briyani</input>
+    <!-- <label>Briyani</label><br> -->
+    <input  type="checkbox" name="Food" value="Parotta">Parotta</input>
+    <!-- <label>Parotta</label><br> -->
+    <input   type="checkbox" name="Food" value="Noodles">Noodles</input>
+    <!-- <label>Noodles</label><br> -->
+    <input  type="checkbox" name="Food" value="Meals">Meals</input>
+    <!-- <label>Meals</label><br> -->
+    <input  type="checkbox" name="Food" value="Uppuma">Uppuma</input>
+    <!-- <label>Uppuma</label><br><br> -->
+    </div>
+
+    <label for="State">State:</label>
+    <input type="text" id="State" name="State" placeholder="State" required><br>
+    
+    <label for="Country">Country:</label>
+    <input type="text" id="Country" name="Country" placeholder="Country" required><br>
+
+    <button  type="button" id="submit" onclick="submitForm()" >Submit</button>
+</div>
+
+  </form>
+
+  <table id="dataTable" class="table" style="display:none;" >
+    <thead>
+      <tr>
+        <th>FirstName</th>
+        <th>LastLame</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Food</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
